@@ -1,6 +1,3 @@
-
-#!/usr/bin/env bash
-
 kubectl get --watch --output-watch-events configmap \
 -o=custom-columns=type:type,name:object.metadata.name \
 --no-headers | \
